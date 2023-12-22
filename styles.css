@@ -1,0 +1,175 @@
+
+:root{
+	
+	--text-clr: #000000;
+	--primary: url("https://img.freepik.com/premium-photo/fast-delivery-scooter-rides-out-smartphone-delivery-concept-online-ordering-food-delivery-last-mile-template-banner-3d-illustration-3d-render_99433-7129.jpg?w=740");
+	--secondary: #00080a;
+	background-image: url("https://media.istockphoto.com/id/609708620/photo/twinkling-golden-glitter-falling-on-flat-surface-lit-by-spotlight.jpg?s=612x612&w=0&k=20&c=w1rMx0u3A0SlxoTJttjMZXJQUKzJRd0fNHpdpx5GGuQ=");
+	--input-bg: #66c4b7;
+	--btn-hvr: #13af05;
+	
+
+	
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: var(--primary);
+	background-repeat: no-repeat;
+	background-size: 800px 900px ;
+	background-position-x: center;
+	background-position-y: center;
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--text-clr);
+	
+}
+
+.wrapper{
+	width: 100%;
+	padding: 10px;
+	margin-top: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.r_form_wrap{
+	width: 500px;
+	max-width: 40%;
+}
+
+.r_form_wrap .title{
+	padding: 30px;
+	background: var(--white);
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.r_form_wrap .title p{
+	font-size: 25px;
+	text-align: center;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.r_form{
+	padding: 15px;
+	border-radius: 100px;
+	background-image: var(--white);
+}
+
+.r_form .input_wrap{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.r_form .input_wrap label{
+	display: table-cell;
+	display:var(--text-clr);
+	margin-bottom: 5px;
+}
+
+.r_form .input_wrap .input_item{
+	position: relative;
+	width: 80%;
+	height: 35px;
+}
+
+.r_form .input_wrap .input_item .input{
+	width: 100%;
+	border-radius: 75px;
+	height: 30px;
+	border: 2px solid var(--input-bg);
+	background: var(--input-bg);
+	padding: 10px 20px;
+	padding-left: 50px;
+	transition: 0.5s ease;
+	color: var(--secondary);
+}
+
+.r_form .input_wrap .input_item .input:focus{
+	border-color: var(--primary);
+}
+
+.r_form .input_wrap .input_item .icon{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	color: var(--secondary);
+	font-size: 16px;
+}
+
+.r_form .input_wrap .input_radio{
+	display: flex;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item{
+	background: var(--input-bg);
+	margin-right: 15px;
+	padding: 25px;
+	border-radius: 150px;
+	position: relative;
+	width: 80px;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary);
+	border: 2px solid transparent;
+	border-radius: 70px;
+	margin: 0;
+	cursor:pointer;
+	font-size: 50;
+	transition: 0.5s;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark .i{
+	margin-right: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio:checked ~ .radio_mark{
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+button{
+	width: 100%;
+	border: 0;
+	background: var(--primary);
+	padding: 10px;
+	border-radius: 100px;
+	height: 40px;
+	text-align: center;
+	color: var(--white);
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+button:hover{
+	background: var(--btn-hvr);
+	text-shadow: #000000;
+	font-size: large;
+}
